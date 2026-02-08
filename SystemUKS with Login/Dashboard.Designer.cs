@@ -40,6 +40,7 @@
             label6 = new Label();
             button3 = new Button();
             button4 = new Button();
+            label7 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -67,7 +68,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(124, 192);
+            button1.Location = new Point(124, 190);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
@@ -90,6 +91,7 @@
             // 
             // button2
             // 
+            button2.ForeColor = SystemColors.ControlText;
             button2.Location = new Point(158, 17);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
@@ -121,6 +123,7 @@
             label4.Size = new Size(87, 20);
             label4.TabIndex = 6;
             label4.Text = "Information";
+            label4.Click += label4_Click;
             // 
             // label5
             // 
@@ -158,13 +161,25 @@
             // 
             // button4
             // 
-            button4.Location = new Point(147, 303);
+            button4.Location = new Point(124, 283);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 10;
-            button4.Text = "button4";
+            button4.Text = "Info";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
+            // 
+            // label7
+            // 
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.ButtonFace;
+            label7.Location = new Point(18, 282);
+            label7.Name = "label7";
+            label7.Size = new Size(100, 23);
+            label7.TabIndex = 11;
+            label7.Text = "Logistik";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Dashboard
             // 
@@ -173,6 +188,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(label7);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(label6);
@@ -204,5 +220,6 @@
         private Label label6;
         private Button button3;
         private Button button4;
+        private Label label7;
     }
 }
