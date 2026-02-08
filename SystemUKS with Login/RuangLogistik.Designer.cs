@@ -35,7 +35,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(86, 74);
+            dataGridView1.Location = new Point(2, 59);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(620, 324);
             dataGridView1.TabIndex = 0;
@@ -47,6 +47,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "RuangLogistik";
             Text = "RuangLogistik";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

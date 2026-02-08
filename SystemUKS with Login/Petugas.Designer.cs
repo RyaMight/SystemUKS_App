@@ -30,14 +30,13 @@
         {
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(87, 59);
+            dataGridView1.Location = new Point(0, 58);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(625, 312);
             dataGridView1.TabIndex = 0;
@@ -46,31 +45,22 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(303, 9);
+            label1.Location = new Point(211, 9);
             label1.Name = "label1";
             label1.Size = new Size(190, 28);
             label1.TabIndex = 1;
             label1.Text = "Data Petugas";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(697, 406);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            label1.Click += label1_Click;
             // 
             // Petugas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Petugas";
             Text = "Petugas";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

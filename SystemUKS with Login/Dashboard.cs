@@ -15,11 +15,22 @@ namespace SystemUKS_with_Login
             InitializeComponent();
         }
 
+        public void loadform(object Form)
+        {
+            if (this.mainpanel.Controls.Count > 0)
+                this.mainpanel.Controls.RemoveAt(0);
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainpanel.Controls.Add(f);
+            this.mainpanel.Tag = f;
+            f.Show();
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Petugas formPetugas = new Petugas(this);
-            formPetugas.Show();
-            this.Hide();
+            loadform(new Petugas(this));
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,21 +57,23 @@ namespace SystemUKS_with_Login
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Pasien formPasien = new Pasien(this);
-            formPasien.Show();
-            this.Hide();
+            loadform(new Pasien(this));
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            RuangLogistik ruangLogistik = new RuangLogistik(this);
-            ruangLogistik.Show();
-            this.Hide();
+            loadform(new RuangLogistik(this));
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -75,9 +75,14 @@ namespace SystemUKS_with_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             dash.Show();
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
