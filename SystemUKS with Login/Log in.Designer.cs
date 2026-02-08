@@ -41,6 +41,8 @@
             pictureBox1 = new PictureBox();
             label3 = new Label();
             pictureBox2 = new PictureBox();
+            label5 = new Label();
+            checkBox1 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -84,7 +86,7 @@
             button1.BackColor = SystemColors.Control;
             button1.Location = new Point(546, 239);
             button1.Name = "button1";
-            button1.Size = new Size(92, 27);
+            button1.Size = new Size(100, 27);
             button1.TabIndex = 3;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
@@ -156,6 +158,25 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(390, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(37, 15);
+            label5.TabIndex = 14;
+            label5.Text = "-Raya";
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(546, 284);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(93, 19);
+            checkBox1.TabIndex = 15;
+            checkBox1.Text = "Remeber me";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -163,6 +184,8 @@
             BackColor = SystemColors.Control;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(checkBox1);
+            Controls.Add(label5);
             Controls.Add(pictureBox2);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
@@ -174,7 +197,7 @@
             Controls.Add(label1);
             Controls.Add(Judul);
             Name = "Form1";
-            Text = "Form1";
+            Text = " ";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -194,5 +217,7 @@
         private PictureBox pictureBox1;
         private Label label3;
         private PictureBox pictureBox2;
+        private Label label5;
+        private CheckBox checkBox1;
     }
 }
