@@ -116,10 +116,9 @@
             // 
             // checkBoxShow
             // 
-            checkBoxShow.AutoSize = true;
             checkBoxShow.Location = new Point(652, 223);
             checkBoxShow.Name = "checkBoxShow";
-            checkBoxShow.Size = new Size(15, 14);
+            checkBoxShow.Size = new Size(21, 19);
             checkBoxShow.TabIndex = 9;
             checkBoxShow.UseVisualStyleBackColor = true;
             checkBoxShow.CheckedChanged += checkBox1_CheckedChanged;

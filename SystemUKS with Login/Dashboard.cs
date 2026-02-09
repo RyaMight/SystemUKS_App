@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -10,6 +11,10 @@ namespace SystemUKS_with_Login
 {
     public partial class Dashboard : Form
     {
+
+        private Size originalFormSize;
+        private Dictionary<Control, Rectangle> ControlBounds = new Dictionary<Control, Rectangle>();
+
         public Dashboard()
         {
             InitializeComponent();
@@ -47,7 +52,7 @@ namespace SystemUKS_with_Login
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+         
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -75,5 +80,12 @@ namespace SystemUKS_with_Login
         {
             Application.Exit();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            loadform(new Ruangperiksa(this));
+        }
+        
+        
     }
 }

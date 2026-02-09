@@ -34,6 +34,8 @@
             button3 = new Button();
             button4 = new Button();
             panelside = new Panel();
+            button7 = new Button();
+            button6 = new Button();
             pictureBox1 = new PictureBox();
             panelup = new Panel();
             button5 = new Button();
@@ -117,6 +119,8 @@
             // panelside
             // 
             panelside.BackColor = Color.DimGray;
+            panelside.Controls.Add(button7);
+            panelside.Controls.Add(button6);
             panelside.Controls.Add(pictureBox1);
             panelside.Controls.Add(button4);
             panelside.Controls.Add(button2);
@@ -127,6 +131,38 @@
             panelside.Name = "panelside";
             panelside.Size = new Size(200, 420);
             panelside.TabIndex = 11;
+            // 
+            // button7
+            // 
+            button7.BackgroundImageLayout = ImageLayout.Zoom;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.White;
+            button7.ImageAlign = ContentAlignment.MiddleLeft;
+            button7.Location = new Point(0, 284);
+            button7.Name = "button7";
+            button7.Size = new Size(200, 30);
+            button7.TabIndex = 13;
+            button7.Text = "Toilet";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.BackgroundImageLayout = ImageLayout.Zoom;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(0, 248);
+            button6.Name = "button6";
+            button6.Size = new Size(200, 30);
+            button6.TabIndex = 12;
+            button6.Text = "Ruang Periksa";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // pictureBox1
             // 
@@ -146,7 +182,7 @@
             panelup.Dock = DockStyle.Top;
             panelup.Location = new Point(0, 0);
             panelup.Name = "panelup";
-            panelup.Size = new Size(800, 30);
+            panelup.Size = new Size(941, 30);
             panelup.TabIndex = 12;
             // 
             // button5
@@ -156,7 +192,7 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(721, 4);
+            button5.Location = new Point(841, 3);
             button5.Name = "button5";
             button5.Size = new Size(33, 23);
             button5.TabIndex = 1;
@@ -181,15 +217,16 @@
             mainpanel.Dock = DockStyle.Fill;
             mainpanel.Location = new Point(200, 30);
             mainpanel.Name = "mainpanel";
-            mainpanel.Size = new Size(600, 420);
+            mainpanel.Size = new Size(741, 420);
             mainpanel.TabIndex = 13;
             // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(941, 450);
             Controls.Add(mainpanel);
             Controls.Add(panelside);
             Controls.Add(panelup);
@@ -213,5 +250,7 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Button button5;
+        private Button button7;
+        private Button button6;
     }
 }

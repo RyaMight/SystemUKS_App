@@ -17,12 +17,11 @@ namespace SystemUKS_with_Login
             string username = textBoxUser.Text;
             string password = textBoxPass.Text;
 
-            string correctUser = "Raya";
-            string correctPass = "Rayasa";
+            string correctUser = "Rayasa";
+            string correctPass = "1324";
 
             if (username == correctUser && password == correctPass)
-            {
-                MessageBox.Show("Login berhasil! Selamat Datang Master " + username, "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            { 
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
                 this.Hide();
