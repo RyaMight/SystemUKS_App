@@ -1,6 +1,6 @@
 ﻿namespace SystemUKS_with_Login
 {
-    partial class Pasien
+    partial class Toilet
     {
         /// <summary>
         /// Required designer variable.
@@ -29,39 +29,26 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(2, 35);
+            dataGridView1.Location = new Point(-8, 39);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(795, 381);
+            dataGridView1.Size = new Size(812, 378);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // label1
-            // 
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(276, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(145, 23);
-            label1.TabIndex = 2;
-            label1.Text = "Data Pasien";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            label1.Click += label1_Click;
-            // 
-            // Pasien
+            // Toilet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
             Controls.Add(dataGridView1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Pasien";
-            Text = "Pasien";
+            Name = "Toilet";
+            Text = "Toilet";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -69,6 +56,5 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Label label1;
     }
 }

@@ -52,7 +52,7 @@ namespace SystemUKS_with_Login
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-         
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -85,7 +85,10 @@ namespace SystemUKS_with_Login
         {
             loadform(new Ruangperiksa(this));
         }
-        
-        
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

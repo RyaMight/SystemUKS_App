@@ -146,6 +146,7 @@
             button7.TabIndex = 13;
             button7.Text = "Toilet";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
