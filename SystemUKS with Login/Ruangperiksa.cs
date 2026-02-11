@@ -82,8 +82,8 @@ namespace SystemUKS_with_Login
                 );
             }
 
-            dataGridView1.ReadOnly = false;
-            dataGridView1.AllowUserToAddRows = true;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.AllowUserToAddRows = false;
         }
         public Ruangperiksa()
         {

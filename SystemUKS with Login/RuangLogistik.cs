@@ -56,10 +56,10 @@ namespace SystemUKS_with_Login
             dataGridView1.Columns[4].Name = "Penanggung Jawab";
             dataGridView1.Columns[5].Name = "ID";
 
-            daftarLogistik.Add(new DataLogistik("Ruang A", 20, "5", 40, "Pak Budi", "L001"));
-            daftarLogistik.Add(new DataLogistik("Ruang B", 20, "5", 25, "Bu Sinta", "L002"));
-            daftarLogistik.Add(new DataLogistik("Ruang A", 20, "5", 40, "Pak Budi", "L001"));
-            daftarLogistik.Add(new DataLogistik("Ruang B", 20, "5", 25, "Bu Sinta", "L002"));
+            daftarLogistik.Add(new DataLogistik("Ruang A", 20, "5", 40, "Raya", "L001"));
+            daftarLogistik.Add(new DataLogistik("Ruang B", 20, "5", 25, "Lita", "L002"));
+            daftarLogistik.Add(new DataLogistik("Ruang A", 20, "5", 40, "Raya", "L001"));
+            daftarLogistik.Add(new DataLogistik("Ruang B", 20, "5", 25, "Lita", "L002"));
 
 
             foreach (var p in daftarLogistik) //untuk membaca semua data (loop) NOTE for Raya
