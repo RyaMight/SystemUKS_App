@@ -29,23 +29,36 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(-8, 39);
+            dataGridView1.Location = new Point(-1, 39);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(812, 378);
+            dataGridView1.Size = new Size(802, 378);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(343, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(115, 24);
+            label1.TabIndex = 1;
+            label1.Text = "Data Toilet";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // Toilet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(dataGridView1);
             Name = "Toilet";
             Text = "Toilet";
@@ -56,5 +69,6 @@
         #endregion
 
         private DataGridView dataGridView1;
+        private Label label1;
     }
 }

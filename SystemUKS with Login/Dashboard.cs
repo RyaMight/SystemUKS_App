@@ -88,7 +88,7 @@ namespace SystemUKS_with_Login
 
         private void button7_Click(object sender, EventArgs e)
         {
-            
+            loadform(new Toilet(this));
         }
     }
 }
