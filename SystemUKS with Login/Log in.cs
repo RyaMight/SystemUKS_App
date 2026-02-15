@@ -21,7 +21,7 @@ namespace SystemUKS_with_Login
             string correctPass = "1324";
 
             if (username == correctUser && password == correctPass)
-            { 
+            {
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
                 this.Hide();
@@ -72,6 +72,13 @@ namespace SystemUKS_with_Login
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            SignUp signup = new SignUp();
+            signup.Show();
+            this.Hide();
         }
     }
 }

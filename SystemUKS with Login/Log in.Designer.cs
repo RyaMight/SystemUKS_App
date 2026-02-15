@@ -43,6 +43,8 @@
             pictureBox2 = new PictureBox();
             label5 = new Label();
             checkBox1 = new CheckBox();
+            label4 = new Label();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -176,6 +178,27 @@
             checkBox1.Text = "Remeber me";
             checkBox1.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            label4.BackColor = SystemColors.Control;
+            label4.ForeColor = SystemColors.ControlDark;
+            label4.Location = new Point(606, 326);
+            label4.Name = "label4";
+            label4.Size = new Size(56, 26);
+            label4.TabIndex = 16;
+            label4.Text = "Sign Up";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
+            label4.Click += label4_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(532, 332);
+            label6.Name = "label6";
+            label6.Size = new Size(74, 15);
+            label6.TabIndex = 17;
+            label6.Text = "New here?   |";
+            // 
             // Form1
             // 
             AcceptButton = button1;
@@ -184,6 +207,8 @@
             BackColor = SystemColors.Control;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(label6);
+            Controls.Add(label4);
             Controls.Add(checkBox1);
             Controls.Add(label5);
             Controls.Add(pictureBox2);
@@ -219,5 +244,7 @@
         private PictureBox pictureBox2;
         private Label label5;
         private CheckBox checkBox1;
+        private Label label4;
+        private Label label6;
     }
 }
