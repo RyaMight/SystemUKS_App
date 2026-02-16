@@ -26,5 +26,12 @@ namespace SystemUKS_with_Login
             login.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 Login = new Form1();
+            Login.Show();
+            this.Hide();
+        }
     }
 }
