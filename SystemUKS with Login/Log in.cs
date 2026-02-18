@@ -14,22 +14,24 @@ namespace SystemUKS_with_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBoxUser.Text;
+            string username = textBoxUser.Text.Trim();
             string password = textBoxPass.Text;
 
-            string correctUser = "Rayasa";
-            string correctPass = "1324";
+            foreach (var user in UserStorage.Users)
+            {
+                if (user.Username == username && user.Password == password)
+                {
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
+                    return;
+                }
+            }
 
-            if (username == correctUser && password == correctPass)
-            {
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Username atau Password salah!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            MessageBox.Show("Username atau Password salah!",
+                "Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
         }
 
         private void textBoxPass_TextChanged(object sender, EventArgs e)

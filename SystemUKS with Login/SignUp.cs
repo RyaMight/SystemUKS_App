@@ -48,7 +48,9 @@ namespace SystemUKS_with_Login
             }
 
             UserStorage.Users.Add(new User(username, password));
-
+            Form1 login = new Form1();
+            login.Show();
+            this.Hide();
             MessageBox.Show("Sign Up berhasil!");
         }
 

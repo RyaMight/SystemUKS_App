@@ -7,7 +7,10 @@ namespace SystemUKS_with_Login
 {
     internal class UserStorage
     {
-        public static List<User> Users = new List<User>();
+        public static List<User> Users = new List<User>()
+        {
+            new User("Rayasa", "1324") // User default
+        };
     }
 
     internal class User
