@@ -40,6 +40,7 @@
             txtPassword = new TextBox();
             label6 = new Label();
             Confirm = new TextBox();
+            checkBox1 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -125,6 +126,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(155, 23);
             txtPassword.TabIndex = 8;
+            txtPassword.UseSystemPasswordChar = true;
             txtPassword.TextChanged += textBox2_TextChanged;
             // 
             // label6
@@ -142,13 +144,25 @@
             Confirm.Name = "Confirm";
             Confirm.Size = new Size(155, 23);
             Confirm.TabIndex = 10;
+            Confirm.UseSystemPasswordChar = true;
             Confirm.TextChanged += Confirm_TextChanged;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(721, 196);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(15, 14);
+            checkBox1.TabIndex = 11;
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(checkBox1);
             Controls.Add(Confirm);
             Controls.Add(label6);
             Controls.Add(txtPassword);
@@ -180,5 +194,6 @@
         private TextBox txtPassword;
         private Label label6;
         private TextBox Confirm;
+        private CheckBox checkBox1;
     }
 }

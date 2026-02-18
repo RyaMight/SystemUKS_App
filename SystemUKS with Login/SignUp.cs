@@ -34,7 +34,7 @@ namespace SystemUKS_with_Login
 
             if (username == "" || password == "")
             {
-                MessageBox.Show("Username dan Password harus diisi!");
+                MessageBox.Show("Username dan Password harus diisi twin");
                 return;
             }
 
@@ -42,7 +42,7 @@ namespace SystemUKS_with_Login
             {
                 if (user.Username == username)
                 {
-                    MessageBox.Show("Username sudah digunakan!");
+                    MessageBox.Show("Username sudah digunakan dawg");
                     return;
                 }
             }
@@ -51,7 +51,7 @@ namespace SystemUKS_with_Login
             Form1 login = new Form1();
             login.Show();
             this.Hide();
-            MessageBox.Show("Sign Up berhasil!");
+            MessageBox.Show("Sign Up berhasil");
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -62,6 +62,20 @@ namespace SystemUKS_with_Login
         private void Confirm_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+                Confirm.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+                Confirm.UseSystemPasswordChar = true;
+            }
         }
     }
 }
