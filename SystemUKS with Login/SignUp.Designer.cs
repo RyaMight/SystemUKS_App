@@ -36,8 +36,10 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            label6 = new Label();
+            Confirm = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -65,26 +67,26 @@
             // 
             // button1
             // 
-            button1.Location = new Point(562, 251);
+            button1.Location = new Point(560, 265);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
-            button1.Text = "Sign up";
+            button1.Text = "Create";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // label2
             // 
-            label2.Location = new Point(487, 122);
+            label2.Location = new Point(414, 132);
             label2.Name = "label2";
-            label2.Size = new Size(60, 15);
+            label2.Size = new Size(125, 18);
             label2.TabIndex = 3;
-            label2.Text = "Username";
+            label2.Text = "Username or Email";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            label3.Location = new Point(479, 170);
+            label3.Location = new Point(457, 171);
             label3.Name = "label3";
             label3.Size = new Size(72, 20);
             label3.TabIndex = 4;
@@ -110,27 +112,47 @@
             label5.Text = "Sign in";
             label5.Click += label5_Click;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Location = new Point(562, 122);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 7;
+            txtUsername.Location = new Point(560, 132);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(155, 23);
+            txtUsername.TabIndex = 7;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(562, 170);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 8;
+            txtPassword.Location = new Point(560, 171);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(155, 23);
+            txtPassword.TabIndex = 8;
+            txtPassword.TextChanged += textBox2_TextChanged;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(435, 217);
+            label6.Name = "label6";
+            label6.Size = new Size(104, 15);
+            label6.TabIndex = 9;
+            label6.Text = "Confirm Password";
+            // 
+            // Confirm
+            // 
+            Confirm.Location = new Point(560, 209);
+            Confirm.Name = "Confirm";
+            Confirm.Size = new Size(155, 23);
+            Confirm.TabIndex = 10;
+            Confirm.TextChanged += Confirm_TextChanged;
             // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(Confirm);
+            Controls.Add(label6);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -154,7 +176,9 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
+        private Label label6;
+        private TextBox Confirm;
     }
 }

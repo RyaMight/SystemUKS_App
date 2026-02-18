@@ -29,9 +29,37 @@ namespace SystemUKS_with_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 Login = new Form1();
-            Login.Show();
-            this.Hide();
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text;
+
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Username dan Password harus diisi!");
+                return;
+            }
+
+            foreach (var user in UserStorage.Users)
+            {
+                if (user.Username == username)
+                {
+                    MessageBox.Show("Username sudah digunakan!");
+                    return;
+                }
+            }
+
+            UserStorage.Users.Add(new User(username, password));
+
+            MessageBox.Show("Sign Up berhasil!");
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Confirm_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
