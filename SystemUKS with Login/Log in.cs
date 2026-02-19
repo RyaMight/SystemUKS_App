@@ -21,7 +21,7 @@ namespace SystemUKS_with_Login
             {
                 if (user.Username == username && user.Password == password)
                 {
-                    Dashboard dashboard = new Dashboard();
+                    Dashboard dashboard = new Dashboard(username);
                     dashboard.Show();
                     this.Hide();
                     return;

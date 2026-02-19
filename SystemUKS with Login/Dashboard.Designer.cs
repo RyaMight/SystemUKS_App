@@ -38,6 +38,7 @@
             button6 = new Button();
             pictureBox1 = new PictureBox();
             panelup = new Panel();
+            lblWelcome = new Label();
             button5 = new Button();
             label1 = new Label();
             mainpanel = new Panel();
@@ -178,6 +179,7 @@
             // panelup
             // 
             panelup.BackColor = Color.Gray;
+            panelup.Controls.Add(lblWelcome);
             panelup.Controls.Add(button5);
             panelup.Controls.Add(label1);
             panelup.Dock = DockStyle.Top;
@@ -185,6 +187,16 @@
             panelup.Name = "panelup";
             panelup.Size = new Size(941, 30);
             panelup.TabIndex = 12;
+            // 
+            // lblWelcome
+            // 
+            lblWelcome.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcome.ForeColor = SystemColors.ButtonHighlight;
+            lblWelcome.Location = new Point(217, 3);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(249, 23);
+            lblWelcome.TabIndex = 2;
+            lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button5
             // 
@@ -253,5 +265,6 @@
         private Button button5;
         private Button button7;
         private Button button6;
+        private Label lblWelcome;
     }
 }

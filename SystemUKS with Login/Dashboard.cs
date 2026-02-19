@@ -11,13 +11,14 @@ namespace SystemUKS_with_Login
 {
     public partial class Dashboard : Form
     {
-
+        private string loggedInUsername;
         private Size originalFormSize;
         private Dictionary<Control, Rectangle> ControlBounds = new Dictionary<Control, Rectangle>();
 
-        public Dashboard()
+        public Dashboard(string username)
         {
             InitializeComponent();
+            loggedInUsername = username;
         }
 
         public void loadform(object Form)
@@ -52,7 +53,7 @@ namespace SystemUKS_with_Login
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            lblWelcome.Text = "Welcome, " + loggedInUsername + "!";
         }
 
         private void label3_Click(object sender, EventArgs e)

@@ -31,12 +31,20 @@ namespace SystemUKS_with_Login
         {
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text;
+            string ConfirmPassword = Confirm.Text;
 
-            if (username == "" || password == "")
+            if (username == "" || password == "" || ConfirmPassword == "")
             {
                 MessageBox.Show("Username dan Password harus diisi twin");
                 return;
             }
+
+            if (password != ConfirmPassword)
+            {
+                MessageBox.Show("Password tidak sama bro");
+                return;
+            }
+
 
             foreach (var user in UserStorage.Users)
             {
@@ -48,10 +56,12 @@ namespace SystemUKS_with_Login
             }
 
             UserStorage.Users.Add(new User(username, password));
+
+            MessageBox.Show("Sign Up berhasil");
+
             Form1 login = new Form1();
             login.Show();
             this.Hide();
-            MessageBox.Show("Sign Up berhasil");
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
