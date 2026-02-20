@@ -192,11 +192,11 @@
             // 
             lblWelcome.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblWelcome.ForeColor = SystemColors.ButtonHighlight;
-            lblWelcome.Location = new Point(217, 3);
+            lblWelcome.Location = new Point(206, 4);
             lblWelcome.Name = "lblWelcome";
             lblWelcome.Size = new Size(249, 23);
             lblWelcome.TabIndex = 2;
-            lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
+            lblWelcome.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // button5
             // 
