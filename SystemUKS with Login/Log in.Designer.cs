@@ -66,9 +66,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Location = new Point(480, 181);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(450, 174);
             label1.Name = "label1";
-            label1.Size = new Size(60, 15);
+            label1.Size = new Size(67, 17);
             label1.TabIndex = 1;
             label1.Text = "Username";
             label1.Click += label1_Click;
@@ -77,16 +78,17 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Location = new Point(483, 222);
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(450, 236);
             label2.Name = "label2";
-            label2.Size = new Size(57, 15);
+            label2.Size = new Size(64, 17);
             label2.TabIndex = 2;
             label2.Text = "Password";
             // 
             // button1
             // 
             button1.BackColor = SystemColors.Control;
-            button1.Location = new Point(546, 248);
+            button1.Location = new Point(450, 315);
             button1.Name = "button1";
             button1.Size = new Size(100, 27);
             button1.TabIndex = 3;
@@ -101,27 +103,30 @@
             // 
             // textBoxUser
             // 
-            textBoxUser.Location = new Point(546, 181);
+            textBoxUser.Location = new Point(450, 194);
+            textBoxUser.Multiline = true;
             textBoxUser.Name = "textBoxUser";
-            textBoxUser.Size = new Size(100, 23);
+            textBoxUser.Size = new Size(293, 30);
             textBoxUser.TabIndex = 7;
             textBoxUser.TextChanged += textBoxUser_TextChanged;
             // 
             // textBoxPass
             // 
-            textBoxPass.Location = new Point(546, 219);
+            textBoxPass.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxPass.Location = new Point(450, 256);
             textBoxPass.Name = "textBoxPass";
-            textBoxPass.Size = new Size(100, 23);
+            textBoxPass.Size = new Size(293, 29);
             textBoxPass.TabIndex = 8;
             textBoxPass.UseSystemPasswordChar = true;
             textBoxPass.TextChanged += textBoxPass_TextChanged_1;
             // 
             // checkBoxShow
             // 
-            checkBoxShow.Location = new Point(652, 223);
+            checkBoxShow.Location = new Point(629, 307);
             checkBoxShow.Name = "checkBoxShow";
-            checkBoxShow.Size = new Size(21, 19);
+            checkBoxShow.Size = new Size(114, 19);
             checkBoxShow.TabIndex = 9;
+            checkBoxShow.Text = "Show Password";
             checkBoxShow.UseVisualStyleBackColor = true;
             checkBoxShow.CheckedChanged += checkBox1_CheckedChanged;
             // 
@@ -171,18 +176,18 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(546, 291);
+            checkBox1.Location = new Point(629, 332);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(93, 19);
+            checkBox1.Size = new Size(104, 19);
             checkBox1.TabIndex = 15;
-            checkBox1.Text = "Remeber me";
+            checkBox1.Text = "Remember me";
             checkBox1.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             label4.BackColor = SystemColors.Control;
             label4.ForeColor = SystemColors.ControlDark;
-            label4.Location = new Point(606, 326);
+            label4.Location = new Point(612, 369);
             label4.Name = "label4";
             label4.Size = new Size(56, 26);
             label4.TabIndex = 16;
@@ -193,7 +198,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(532, 332);
+            label6.Location = new Point(532, 375);
             label6.Name = "label6";
             label6.Size = new Size(74, 15);
             label6.TabIndex = 17;
