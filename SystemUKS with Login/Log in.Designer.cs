@@ -103,10 +103,10 @@
             // 
             // textBoxUser
             // 
+            textBoxUser.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxUser.Location = new Point(450, 194);
-            textBoxUser.Multiline = true;
             textBoxUser.Name = "textBoxUser";
-            textBoxUser.Size = new Size(293, 30);
+            textBoxUser.Size = new Size(293, 29);
             textBoxUser.TabIndex = 7;
             textBoxUser.TextChanged += textBoxUser_TextChanged;
             // 
